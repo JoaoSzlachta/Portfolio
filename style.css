@@ -147,20 +147,45 @@ button > a {
 }
 
 .project-card {
-    width: 80%;
+    /* width: 80%;
     max-width: 30%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
+    margin-bottom: 25px; */
+    flex: 1 1 600;
+    width: 600px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    
 
     & img {
         width: 100%;
+        height: 400px;
+        object-fit: cover;
     }
+
     & .middle-message {
-        text-align: center;
-        padding: 10px 20px;
+        padding: 10px;
         font-size: 2em;
         font-weight: 300;
+        margin: 10px;
+        flex-grow: 1;
+
+        & p{
+            color: black;
+            font-size: 0.8em;
+            font-weight: 300;
+        }
+
+        & h3 {
+            font-size: 1em;
+            font-weight: 500;
+        }
     }
 
 }
