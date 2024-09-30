@@ -1,0 +1,167 @@
+:root {
+    --primaryColor: #551CF6;
+  }
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+}
+
+#initial {
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1, h2 {
+    color: white;
+}
+
+button {
+    color: var(--primaryColor);
+    background-color: transparent;
+    border-color: white;
+    border-width: 5px;
+    border-radius: calc(infinity * 1px);
+    width: 150px;
+    height: 105px;
+
+    text-align: center;
+    padding: 5px 0;
+    font-size: 2em;
+
+
+    &:hover {
+        background-color: var(--primaryColor);
+        color: white;
+        border-color: var(--primaryColor);
+        transition: 0.2s ease-in-out;
+        width: 200px;
+        height: 120px;
+    }
+}
+
+button > a {
+    text-decoration: none;
+
+    &:hover{
+        color: white;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+#informations {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    
+    max-width: 2500px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    & h1 {
+        font-size: 10em;
+    }
+} 
+
+.card {
+    font-weight: 900;
+    margin: 15px;
+    padding: 15px;
+    width: 100%;
+
+    margin: 50px;
+    
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+
+    & h2 {
+        font-size: 6em;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-color: var(--primaryColor);
+        text-underline-offset: 20px;
+    }
+
+    & p {
+        color: white;
+        font-size: 2em;
+        font-weight: 400;
+        text-align: justify;
+
+        & u {
+            text-decoration: solid underline var(--primaryColor) 4px;
+            text-underline-offset: 3px;
+        }
+    }
+}
+
+#aboutMe {
+    & h2 {
+        text-align: left;
+    }
+}
+
+#personal-projects {
+    & h2 {
+        text-align: right;
+    }
+}
+
+#academic-projects {
+    & h2 {
+        text-align: left;
+    }
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.project-card {
+    width: 80%;
+    max-width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+
+    & img {
+        width: 100%;
+    }
+    & .middle-message {
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 2em;
+        font-weight: 300;
+    }
+
+}
+
