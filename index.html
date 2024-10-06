@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    
     <link rel="stylesheet" href="style.css">
 
     <title>Portfólio</title>
@@ -22,52 +23,99 @@
     <div id="informations">
         <h1>SEJA BEM-VINDO</h1>
         <div class="card" id="aboutMe">
-            <h2>Sobre Mim</h2>
-            <p>
-                Prazer, meu nome é João Pedro Brustolin Szlachta.
-                Atualmente estou cursando <u>Ciência da Computação</u> na UniFil (Centro Universitário Filadélfia).
-                E apesar de aprender sobre todas as áreas da computação (Lógica, Back-end, Front-end, IA, DevOps, Gerenciamento de Projeto, etc) o meu interesse
-                caiu quase que por completo no <u>Front-end</u>. 
-
-            </p>
+            <div>
+                <h2>Sobre Mim</h2>
+                <p>
+                    Prazer, meu nome é João Pedro Brustolin Szlachta.
+                    Atualmente estou cursando <u>Ciência da Computação</u> na UniFil (Centro Universitário Filadélfia).
+                    E apesar de aprender sobre todas as áreas da computação (Lógica, Back-end, Front-end, IA, DevOps, Gerenciamento de Projeto, etc) o meu interesse
+                    caiu quase que por completo no <u>Front-end</u>.
+                    Tenho gostado de trabalhar com React e Tailwindcss, buscando sempre trazer a melhor experiência para o usuário
+                    e por isso busco estudar também Design, UX/UI e áreas correlatas.
+                </p>
+            </div>
+            <div><img src="otherAssets/fotominha.jpg" alt=""></div>
+        </div>
+        <div class="card" id="technologies">
+            <h2>Tecnologias mais usadas</h2>
+            <p>Desde o início dos meus estudos na área da tecnologia tive a oportunidade de trabalhar com várias tecnologias, plataformas e recursos. Dentre as que mais utilizei estão:
+                HTML, CSS, JavaScript. E recentemente tenho trabalhado bastante com Laravel e estudado mais afundo o React. E o Figma não podia faltar por conta de todos os protótipos e
+                modelos feitos nele.
+            </p> 
+            <div class="icons">
+                <i class="fa-brands fa-html5" style="color: #e44d26;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                <i class="fa-brands fa-laravel" style="color: #ff0000;"></i>
+                <i class="fa-brands fa-react" style="color: #61dafb;"></i>
+                <img src="otherAssets/figma.png" alt="">
+            </div>
         </div>
         <div class="card" id="personal-projects">
             <h2>Projetos Pessoais</h2>
             <p>Segue abaixo alguns projetos meus feitos durante meus estudos. Dentre eles estão alguns projetos feitos através de curso e alguns que apenas sairam da minha cabeça.</p>
-            <p>Link para o meu github pessoal: <a href="">GitHub</a></p>            
+            <p>Link para o meu github pessoal: <a href="https://github.com/JoaoSzlachta" target="_blank" rel="noopener noreferrer">GitHub</a></p>            
         </div>
         <div class="card" id="academic-projects">
             <h2>Projetos Acadêmicos</h2>
             <p>Segue abaixo alguns projetos realizados durante o curso de graduação na UniFil.</p>
-            <p>Link para o meu github do curso: <a href="">GitHub</a></p>
+            <p>Link para o meu github do curso: <a href="https://github.com/JoaoBSzlachta" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 
-            <div class="project-cards">
-                <div class="project-card">
-                    <a href="https://www.greenfoot.org/scenarios/31239"><img src="projects-img/runningnikuman.png" alt=""></a>
-                    <div class="middle-message">
-                        <h3>Running Nikuman</h3>
-                        <p>
-                            Jogo feito com Greenfoot usando Java.
-                            Construído junto com <a href="">Marianni Artoni</a>.
-                        </p>
+            <div class="project-section">
+                <h3>Análises e Algorítmos</h3>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <a href="https://joaobszlachta.github.io/MathMethodsHexo/" target="_blank" rel="noopener noreferrer"><img src="projects-img/mathmethodshexo.png" alt=""></a>
+                        <div class="middle-message">
+                            <h4>Math Methods</h4>
+                            <p>
+                                Blog construído com Hexo para registrar estudos sobre métodos de ajustes de curvas.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="projects-img/mathmethodshexo.png" alt="">
-                    <div class="middle-message">
-                        <span>Acesse <a href="https://joaobszlachta.github.io/MathMethodsHexo/">aqui</a></span>
+                    <div class="project-card">
+                        <a href="https://joaobszlachta.github.io/InterpolationMethods/" target="_blank" rel="noopener noreferrer"><img src="projects-img/interpolationMethods.png" alt=""></a>
+                        <div class="middle-message">
+                            <h4>Métodos de Interpolação</h4>
+                            <p>
+                                Página que calcula a interpolação de pontos através dos métodos de Newton o Lagrange.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="projects-img/runningnikuman.png" alt="">
-                    <div class="middle-message">
-                        <span>Acesse <a href="https://www.greenfoot.org/scenarios/31239">aqui</a></span>
+                    <div class="project-card">
+                        <a href="https://joaobszlachta.github.io/LinearRegression/" target="_blank" rel="noopener noreferrer"><img src="projects-img/linearRegression.png" alt=""></a>
+                        <div class="middle-message">
+                            <h4>Regressão Linear</h4>
+                            <p>
+                                Página que calcula a regressão linear de pontos através do métodos dos Mínimos Quadrados.
+                            </p>
+                        </div>
                     </div>
+                    <div class="project-card">
+                        <a href="https://github.com/JoaoBSzlachta/Sorting-Algorithm-Analysis?tab=readme-ov-file" target="_blank" rel="noopener noreferrer"><img src="projects-img/analisesdealgoritmosdeordenacao.png" alt=""></a>
+                        <div class="middle-message">
+                            <h4>Análise de Algoritmos de Ordenação</h4>
+                            <p>
+                                Estudo onde é comparado a curva de desempenho de quatro algoritmos de ordenação (Bubble, Insertion, Merge e Selection).
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="project-card">
-                    <img src="projects-img/runningnikuman.png" alt="">
-                    <div class="middle-message">
-                        <span>Acesse <a href="https://www.greenfoot.org/scenarios/31239">aqui</a></span>
+            </div>
+
+            <div class="project-section">
+                <h3>Jogos</h3>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <a href="https://www.greenfoot.org/scenarios/31239"><img src="projects-img/runningnikuman.png" alt=""></a>
+                        <div class="middle-message">
+                            <h4>Running Nikuman</h4>
+                            <p>
+                                Jogo feito com Greenfoot usando Java.
+                                Construído junto com <a href="https://github.com/MarianniArtoni">Marianni Artoni</a>.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
