@@ -150,31 +150,30 @@ button>a {
 #aboutMe {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
-    & div {
+    & .aboutMe-content {
         padding: 8px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: left;
 
+        & h2 {
+            text-align: left;
+        }
+    }
 
-
+    & .aboutMe-img {
         & img {
             border-radius: 8%;
             overflow: hidden;
             width: 320px;
             height: auto;
         }
-
-
-
     }
 
-    & h2 {
-        margin: 24px;
-        text-align: left;
-    }
+    
 }
 
 #technologies {
@@ -358,6 +357,10 @@ button>a {
             & img {
                 width: 300px;
             }
+        }
+
+        & .aboutMe-content {
+            align-items: center;
         }
     }
 
