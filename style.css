@@ -1,6 +1,6 @@
 :root {
     --primaryColor: #551CF6;
-  }
+}
 
 html {
     margin-inline: 240px;
@@ -32,18 +32,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     & h1 {
         font-size: 89.76px;
     }
+
     & h2 {
         font-size: 67.34px;
     }
-    
-    
+
+
 }
 
-h1, h2 {
+h1,
+h2 {
     color: white;
 }
 
@@ -51,7 +53,7 @@ button {
     color: var(--primaryColor);
     background-color: transparent;
     border-color: white;
-    border-width: 1px;
+    border-width: 2px;
     border-radius: calc(infinity * 1px);
     width: 128px;
     height: 64px;
@@ -68,13 +70,14 @@ button {
         transition: 0.2s ease-in-out;
         width: 192px;
         height: 96px;
+        font-size: 56px;
     }
 }
 
-button > a {
+button>a {
     text-decoration: none;
 
-    &:hover{
+    &:hover {
         color: white;
         transition: 0.2s ease-in-out;
     }
@@ -86,7 +89,7 @@ button > a {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    
+
     max-width: 1920px;
 
     text-align: center;
@@ -95,16 +98,18 @@ button > a {
     padding: 10px;
 
     & h1 {
-        font-size: 89.76px;/* font-size: 10em; */
+        font-size: 89.76px;
+        /* font-size: 10em; */
     }
-} 
+}
 
 .card {
     font-weight: 900;
     margin: 8px;
     padding: 16px;
     width: 100%;
-    
+    line-height: 1.6;
+
     border: 1px solid #ccc;
     border-radius: 16px;
 
@@ -114,16 +119,18 @@ button > a {
         -ms-hyphens: auto;
             hyphens: auto; */
     & h2 {
-        font-size: 67.34px; /*font-size: 6em;*/
+        font-size: 67.34px;
+        /*font-size: 6em;*/
         text-transform: uppercase;
         text-decoration: underline;
         text-decoration-color: var(--primaryColor);
         text-underline-offset: 8px;
-        text-align: center;
+        text-align: left;
     }
 
     & h3 {
-        font-size: 50.52px; /* font-size: 4em; */
+        font-size: 50.52px;
+        /* font-size: 4em; */
         color: white;
     }
 
@@ -131,7 +138,7 @@ button > a {
         color: white;
         font-size: 16px;
         font-weight: 400;
-        text-align: justify;
+        text-align: left;
 
         & u {
             text-decoration: solid underline var(--primaryColor) 2px;
@@ -151,7 +158,7 @@ button > a {
         justify-content: center;
         align-items: center;
 
-        
+
 
         & img {
             border-radius: 8%;
@@ -160,10 +167,10 @@ button > a {
             height: auto;
         }
 
-       
-        
+
+
     }
-    
+
     & h2 {
         margin: 24px;
         text-align: left;
@@ -172,16 +179,30 @@ button > a {
 
 #technologies {
     & .icons {
-        font-size: 128px;
-        display: wrap;
+        font-size: 96px;
+        display: flex; /* Change from wrap to flex */
         flex-wrap: wrap;
-        justify-content: space-around; /* Espaçamento igual entre os ícones */
-        align-items: center; /* Alinha os ícones verticalmente no centro */
+        justify-content: space-around; /* Equal spacing between icons */
+        align-items: center; /* Vertically center icons */
+        
+        & .icon-container {
+            text-align: center;
+        }
 
         & img {
-            width: 120px; /* Largura da imagem */
-            height: 120px; /* Altura da imagem */
-            object-fit: contain; /* Mantém a proporção da imagem */
+            width: 88px;
+            /* Largura da imagem */
+            height: 88px;
+            /* Altura da imagem */
+            object-fit: contain;
+            /* Mantém a proporção da imagem */
+        }
+
+        & span {
+            display: block; /* Ensure label is on a new line */
+            color: white; /* Label color */
+            font-size: 16px; /* Label font size */
+            margin-top: 2px; /* Space between icon and label */
         }
     }
 }
@@ -221,7 +242,7 @@ button > a {
             border-radius: 16px;
         }
     }
-    
+
 
     & .middle-message {
         display: flex;
@@ -230,7 +251,8 @@ button > a {
         padding: 8px;
         font-weight: 300;
         flex-grow: 1;
-        
+        align-items: center;
+
         & div {
             height: 64px;
             align-items: center;
@@ -248,13 +270,37 @@ button > a {
             }
         }
 
-        & p{
+        & p {
             color: black;
             font-size: 16px;
             font-weight: 300;
+            text-align: center;
         }
 
-        
+        & .project-card-btn {
+            width: auto;
+            height: 32px;
+            font-size: 16px;
+            padding: 4px;
+            border-color: var(--primaryColor);
+
+            & a {
+                text-decoration: none;
+
+                &:hover {
+                    color: white;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+
+            & :hover {
+                background-color: var(--primaryColor);
+                color: white;
+                transition: 0.2s ease-in-out;
+            }
+        }
+
+
     }
 
 }
@@ -273,6 +319,7 @@ button > a {
         & h1 {
             font-size: 48px;
         }
+
         & h2 {
             font-size: 36px;
         }
@@ -281,30 +328,35 @@ button > a {
     .card {
         margin: 2px;
         padding: 8px;
+
         & h1 {
             font-size: 48px;
         }
+
         & h2 {
             font-size: 36px;
+            text-align: center;
         }
+
         & h3 {
             font-size: 24px;
         }
+
         & p {
             font-size: 14px;
         }
-        
+
     }
 
     #aboutMe {
         flex-direction: column;
 
-        & div{
+        & div {
             margin: 0;
             padding: 0;
 
             & img {
-            width: 300px;
+                width: 300px;
             }
         }
     }
@@ -318,15 +370,17 @@ button > a {
                 height: 60px;
             }
         }
-        }
-        
+    }
 
-    
+
+
 
     .project-card {
-         /* Allow cards to take more width */
+        /* Allow cards to take more width */
         overflow: hidden;
-        margin: 4px; /* Adjust margins */
+        margin: 4px;
+
+        /* Adjust margins */
         & img {
             height: 144px;
         }
