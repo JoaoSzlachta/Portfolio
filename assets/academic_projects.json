@@ -1,0 +1,62 @@
+[
+    {
+        "section": "Análises e Algorítmos",
+        "projects": [
+            {
+                "image": "./assets/projects-img/mathmethodshexo.png",
+                "link": "https://joaobszlachta.github.io/MathMethodsHexo/",
+                "title": "Math Methods",
+                "content": "Blog construído com Hexo para registrar estudos sobre métodos de ajustes de curvas."
+            },
+            {
+                "image": "./assets/projects-img/interpolationMethods.png",
+                "link": "https://joaobszlachta.github.io/InterpolationMethods/",
+                "title": "Métodos de Interpolação",
+                "content": "Página que calcula a interpolação de pontos através dos métodos de Newton o Lagrange."
+            },
+            {
+                "image": "./assets/projects-img/linearRegression.png",
+                "link": "https://joaobszlachta.github.io/LinearRegression/",
+                "title": "Regressão Linear",
+                "content": "Página que calcula a regressão linear de pontos através do métodos dos Mínimos Quadrados."
+            },
+            {
+                "image": "./assets/projects-img/analisesdealgoritmosdeordenacao.png",
+                "link": "https://github.com/JoaoBSzlachta/Sorting-Algorithm-Analysis?tab=readme-ov-file",
+                "title": "Análise de Algoritmos de Ordenação",
+                "content": "Estudo onde é comparado a curva de desempenho de quatro algoritmos de ordenação (Bubble, Insertion, Merge e Selection)"
+            }
+        ]
+    },
+
+    {
+        "section" : "Jogos",
+        "projects" : [
+            {
+                "image": "./assets/projects-img/runningnikuman.png",
+                "link": "https://www.greenfoot.org/scenarios/31239",
+                "title": "Running Nikuman",
+                "content": "Jogo feito com Greenfoot usando Java. Construído junto com <a href='https://github.com/MarianniArtoni' target='_blank' rel='noopener noreferrer'>Marianni Artoni</a>."
+            },
+            {
+                "image": "./assets/projects-img/defendthecrown.png",
+                "link": "http://140.238.239.164/index.html",
+                "title": "Defend The Crown",
+                "content": "Jogo de estratégia inspirado em shogi e xadrez feito com Phaser.js para Extensão Curricular. Construído junto com <a href='https://github.com/FelipeBertol' target='_blank' rel='noopener noreferrer'>Felipe Bertoli</a>, <a href='https://github.com/MarianniArtoni' target='_blank' rel='noopener noreferrer'>Marianni Artoni</a> e <a href='https://github.com/Rafaeros' target='_blank' rel='noopener noreferrer'>Rafael Adrian</a>."
+            }
+        ]
+    },
+
+    {
+        "section" : "Estágio Obrigatório",
+        "projects" : [
+            {
+                "image" : "./assets/projects-img/sistemadeanalisesclinicas.png",
+                "link" : "O-codigo-e-o-sistema-nao-estao-disponiveis-para-demonstracao!",
+                "title" : "Sistema de Análises Clínicas",
+                "content" : "Sistema para gerenciamento de laudos dos exames realizados no Laboratório de Análises Clínicas da UniFil. Por ser um sistema idealizado para uso interno, <em>o código não está disponível para demonstração</em>. O sistema foi construído principalmente com <u>Laravel</u>, <u>React</u> e <u>MySQL</u>." 
+            }
+        ]
+    }
+
+]

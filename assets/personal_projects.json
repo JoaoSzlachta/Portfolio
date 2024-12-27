@@ -1,0 +1,14 @@
+[
+    {
+        "section" : "Web",
+        "projects" : [
+            {
+                "image": "./assets/projects-img/copyspotify.png",
+                "link": "https://github.com/JoaoSzlachta/CopySpotify.git",
+                "title": "CopySpotify",
+                "content": "Cópia da interface do Spotify para estudo de desenvolvimento web."
+            }
+        ]
+    }
+
+]
