@@ -48,9 +48,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // Handle projects cards displaying
+    // Call project cards displaying
+    handleProjectCardDisplaying();
+    
+    
+});
+
+const handleProjectCardDisplaying = () => {
+    fetchAcademicProjectsAndBuild();
+    fetchPersonalProjectsAndBuild();
+    
+}
+
+const fetchAcademicProjectsAndBuild = () => {
     const academicProject = document.querySelector('#academic-projects')
-    const personalProject = document.querySelector('#personal-projects')
 
     fetch("./assets/academic_projects.json")
     .then((response) => response.json())
@@ -94,6 +105,11 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error loading academic project data:", error));
 
+}
+
+const fetchPersonalProjectsAndBuild = () => {
+    const personalProject = document.querySelector('#personal-projects')
+
     fetch("./assets/personal_projects.json")
     .then((response) => response.json())
     .then((data) => {
@@ -136,9 +152,5 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error loading personal project data:", error));
 
-});
-
-const handleProjectCardDisplaying = () => {
-    
 }
     
