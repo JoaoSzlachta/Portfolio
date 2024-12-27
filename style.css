@@ -278,13 +278,16 @@ button>a {
 
         & .project-card-btn {
             width: auto;
-            height: 32px;
+            height: 40px;
             font-size: 16px;
             padding: 4px;
             border-color: var(--primaryColor);
+            text-decoration: none;
+            
 
             & a {
                 text-decoration: none;
+                margin: 16px;
 
                 &:hover {
                     color: white;
