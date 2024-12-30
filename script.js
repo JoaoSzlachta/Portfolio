@@ -80,7 +80,7 @@ const fetchAcademicProjectsAndBuild = () => {
                 projectCard.classList.add('project-card')
         
                 projectCard.innerHTML = `
-                <a href=${project.link} target="_blank" rel="noopener noreferrer"><img src=${project.image} alt=""></a>
+                <a href=${project.link} target="_blank" rel="noopener noreferrer"><img src=${project.image} alt="${project.altText}"></a>
                 <div class="middle-message">
                     <div>
                         <h4>${project.title}</h4>
@@ -127,7 +127,7 @@ const fetchPersonalProjectsAndBuild = () => {
                 projectCard.classList.add('project-card')
         
                 projectCard.innerHTML = `
-                <a href=${project.link} target="_blank" rel="noopener noreferrer"><img src=${project.image} alt=""></a>
+                <a href=${project.link} target="_blank" rel="noopener noreferrer"><img src=${project.image} alt="${project.altText}"></a>
                 <div class="middle-message">
                     <div>
                         <h4>${project.title}</h4>

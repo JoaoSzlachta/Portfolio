@@ -7,7 +7,7 @@
                 "link": "https://github.com/JoaoSzlachta/CopySpotify.git",
                 "title": "CopySpotify",
                 "content": "Cópia da interface do Spotify para estudo de desenvolvimento web.",
-                "alt-text": "Page of a copy of spotify interface"
+                "altText": "Page of a copy of spotify interface"
             }
         ]
     }
