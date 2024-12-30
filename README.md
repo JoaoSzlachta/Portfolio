@@ -1,11 +1,12 @@
 # Portfolio
+
 Hello, you!
 
-This a my portfolio where I present my self and what I have done with technology.
+I am currently completing my undergraduate degree in Computer Science, with plans to graduate in 2025. This portfolio showcases my work and projects in technology.
 
-I am finishing my undergraduate course in Computer Science and focusing on starting a graduate course or a undergraduate specialization.
+I’m exploring options for further studies, whether a graduate program or specialization. Feel free to reach out to me in English or Portuguese if you'd like to connect.
 
-If you want to chat a little bit, feel free to contact me in english or portuguese.
+### Check out my work
 
-### The portfolio
-https://joaoszlachta.github.io/Portfolio/
+You can view my portfolio here:  
+[https://joaoszlachta.github.io/Portfolio/](https://joaoszlachta.github.io/Portfolio/)
