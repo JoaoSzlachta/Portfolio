@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Call project cards displaying
     handleProjectCardDisplaying();
+
+    //Set current year in footer copyright paragraph
+    getAndSetCurrentYear();
     
     
 });
@@ -153,4 +156,7 @@ const fetchPersonalProjectsAndBuild = () => {
     .catch((error) => console.error("Error loading personal project data:", error));
 
 }
-    
+
+const getAndSetCurrentYear = () => {
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+}

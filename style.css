@@ -109,6 +109,12 @@ button>a {
         margin: 24px 0px;
         /* font-size: 10em; */
     }
+
+    & footer {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 
 .card {
