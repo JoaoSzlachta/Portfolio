@@ -101,6 +101,14 @@ button>a {
         font-size: 89.76px;
         /* font-size: 10em; */
     }
+
+    & header {
+        font-size: 89.76px;
+        color: white;
+        font-weight: bold;
+        margin: 24px 0px;
+        /* font-size: 10em; */
+    }
 }
 
 .card {
@@ -318,7 +326,7 @@ button>a {
     }
 
     #initial {
-        & h1 {
+        & h1, header {
             font-size: 48px;
         }
 
