@@ -176,6 +176,29 @@ button>a {
         & h2 {
             text-align: left;
         }
+
+        .aboutMe-links {
+            font-size: 40px;
+            display: flex; /* Change from wrap to flex */
+            flex-wrap: wrap;
+            justify-content: space-around; /* Equal spacing between icons */
+            align-items: center; /* Vertically center icons */
+            
+            a {
+                text-decoration: none;
+                
+                & .icon-container {
+                    text-align: center;
+                }
+
+                & span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: white; /* Label color */
+                    font-size: 16px; /* Label font size */
+                }
+            }
+        }
     }
 
     & .aboutMe-img {
