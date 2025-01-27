@@ -106,7 +106,7 @@ button>a {
         font-size: 89.76px;
         color: white;
         font-weight: bold;
-        margin: 24px 0px;
+        margin: 64px 0px;
         /* font-size: 10em; */
     }
 
@@ -114,6 +114,43 @@ button>a {
         color: white;
         font-size: 16px;
         font-weight: 400;
+    }
+
+    & nav {
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 16px;
+        height: 4em;
+        
+
+        & ul {
+           display: flex;
+           /* flex-wrap: nowrap; */
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+           gap: 10%;
+           height: 50%;
+
+           list-style-type: none;
+
+           & li {
+                &:hover {
+                    padding: 8px;
+                    border: 2px solid white;
+                    border-radius: 16px;
+                    transition: padding 0.3s;
+                    transition-timing-function: ease-in-out;
+                    font-weight: bold;
+                }
+                & a {
+                    color: white;
+                    text-decoration: none;
+                        
+                   }
+           }
+           
+        }
     }
 }
 
