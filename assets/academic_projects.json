@@ -29,6 +29,13 @@
                 "title": "Análise de Algoritmos de Ordenação",
                 "content": "Estudo onde é comparado a curva de desempenho de quatro algoritmos de ordenação (Bubble, Insertion, Merge e Selection)",
                 "altText": "Study where is compared the perfomance of four sort methods"
+            },
+            {
+                "image": "./assets/projects-img/intelligentagentstudy.png",
+                "link": "https://github.com/JoaoBSzlachta/Intelligent_Agent_Study",
+                "title": "Intelligent Agent Study",
+                "content": "Estudo sobre agentes inteligentes feito sobre a analíse do jogo paciência. O código dos agentes foi construído com Python.",
+                "altText": "Beginning of ReadMe file in GitHub repository of Intelligent Agent Study"
             }
         ]
     },
