@@ -1,0 +1,460 @@
+:root {
+    --primaryColor: #0F172A;
+    --secondaryColor: #009FB7; /*#8367C7 #7C3AED #8F00FF*/
+    --highligth: #2DD4BF;
+    --alterWhite: #EDF4ED;
+    --alterPurple: #8F00FF;
+    --bg-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+
+    --fs-h1: 4.5rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+    --fs-small: 0.875rem;
+
+    /* Line-heights */
+    --lh-heading: 1.2;
+    --lh-body: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--alterWhite) var(--bg-image);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100dvw;
+    overflow-x: hidden;
+    
+
+    & h1, h2 {
+        font-family: 'Fraunces';
+        line-height: var(--lh-heading);
+    }
+
+    & h1 {
+        font-size: var(--fs-h1);
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+
+    & h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    & h3 {
+        font-size: var(--fs-h3);
+        font-weight: 600;
+    }
+
+}
+
+#initial, #informations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#initial {
+    background: var(--primaryColor) var(--bg-image);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & h2 {
+        color: var(--alterWhite);
+    }
+}
+
+button {
+    color: var(--primaryColor);
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+    border-radius: calc(infinity * 1px);
+    width: 128px;
+    height: 64px;
+
+    text-align: center;
+    padding: 5px 0;
+    font-size: 48px;
+
+
+    &:hover {
+        background-color: var(--secondaryColor);
+        color: white;
+        border-color: var(--secondaryColor);
+        transition: 0.2s ease-in-out;
+        width: 192px;
+        height: 96px;
+        font-size: 56px;
+    }
+}
+
+button>a {
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+#informations {
+    /* overflow: auto; */
+    display: none;
+    flex-direction: column;
+
+    & header {
+        font-size: 80px;
+        color: white;
+        font-weight: bold;
+        margin: 64px 0px;
+        /* font-size: 10em; */
+    }
+
+    & footer {
+        background-color: var(--primaryColor);
+        color: var(--secondaryColor);
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    & nav {
+        width: 50%;
+        border: 1px solid white;
+        border-radius: 16px;
+        height: 2.5em;
+        position: fixed;
+        top: 0; 
+        z-index: 100; 
+        background: var(--primaryColor) var(--bg-image);
+        color: var(--alterWhite);
+        overflow: hidden;
+        margin-top: 12px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & ul {
+           display: flex;
+           justify-content: center;
+           gap: 10%;
+           width: 100%;
+
+           list-style-type: none;
+
+           & li {
+                &:hover {
+                    padding: 4px;
+                    border: 1.5px solid var(--alterWhite);
+                    border-radius: 16px;
+                    transition: padding 0.15s;
+                    transition-timing-function: ease-in-out;
+                    font-weight: bold;
+                }
+
+                & a {
+                    color: var(--alterWhite);
+                    text-decoration: none;  
+                }
+           }
+           
+        }
+    }
+}
+
+.card {
+    font-weight: 900;
+    line-height: 1.6;
+    
+    & h2 {
+        font-size: 2.5rem;
+        color: var(--primaryColor);
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-color: var(--primaryColor);
+        text-underline-offset: 8px;
+        text-align: left;
+    }
+
+    & h3 {
+        font-size: var(--fs-h3);
+        color: white;
+    }
+
+    & p {
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+
+        & u {
+            text-decoration: solid underline var(--primaryColor) 2px;
+            text-underline-offset: 2px;
+        }
+    }
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+    height: 90dvh;
+    width: 100%;
+
+    & .aboutMe-holder {
+        display: flex;
+
+        & .aboutMe-content {
+            display: flex;
+            margin: 0px 16px;
+            padding: 24px;
+            flex-direction: column;
+            max-width: 900px;
+            background: var(--alterWhite) var(--bg-image);
+            border-radius: 12px;
+            height: strech;
+        }
+
+        & .aboutMe-img {
+            & img {
+                border-radius: 12px;
+                margin-left:16px;
+                margin-right: 8px;
+                overflow: hidden;
+                width: 100%;
+                max-width: 450px;
+                object-fit: cover;
+                height: auto;
+                box-shadow: -10px -8px 1.5px var(--alterWhite)
+            }
+        }
+    }   
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ALINHAMENTO VERTICAL CENTRAL (O mais importante) */
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 12px;
+
+    & h2 {
+        font-size: 2.5rem;
+        text-align: left;
+        margin: 0; /* Remove margens que desalinhariam o topo */
+    }
+
+    & .links {
+        display: flex;
+        align-items: center; /* Alinha os ícones entre si */
+        gap: 20px;           /* Espaçamento moderno entre os ícones */
+        font-size: 1.5rem;
+
+        a {
+            display: flex;
+            align-items: center; /* Alinha o ícone com o texto dentro do link */
+            gap: 8px;           /* Espaço entre ícone e o texto do span */
+            text-decoration: none;
+            
+            & .icon-container {
+                display: flex;
+                align-items: center;
+            }
+
+            & span {
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#technologies {
+    margin: 24px;
+    border: var(--secondaryColor);
+    border-radius: 12px;
+    padding: 24px;
+    height: fit-content;
+
+    & h2 {
+        color: var(--secondaryColor);
+        text-decoration: underline;
+        text-decoration-color: var(--secondaryColor);
+        text-underline-offset: 8px;
+    }
+
+    & .icons {
+        padding: 8px;
+        font-size: 96px;
+        display: flex; /* Change from wrap to flex */
+        flex-wrap: wrap;
+        justify-content: space-around; /* Equal spacing between icons */
+        align-items: center; /* Vertically center icons */
+        
+        & .icon-container {
+            text-align: center;
+            padding: 24px;
+            border-radius: 16px;
+            margin: 4px 0px;
+        }
+
+        & img {
+            width: 88px;
+            height: 88px;
+            object-fit: contain;
+        }
+
+        & span {
+            display: block; /* Ensure label is on a new line */
+            color: var(--primaryColor); /* Label color */
+            font-size: 16px; /* Label font size */
+            margin-top: 2px; /* Space between icon and label */
+        }
+    }
+}
+
+#personal-projects, #academic-projects{
+    background-color: var(--secondaryColor);
+    margin: 24px;
+    width: 90%;
+    border-radius: 12px;
+    padding: 12px 48px 36px 48px;
+
+    & .project-holder {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.project-card {
+    flex: 0 1 300px;
+    width: 300px;
+    background-color: white;
+    box-shadow: -10px -8px 1.5px var(--alterWhite);
+    /* box-shadow: 0 4px 8px 0 var(--alterWhite), 0 6px 20px 0 var(--alterWhite); */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1.5px solid var(--primaryColor);
+
+
+    & a {
+        width: 300px;
+
+
+        & img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 16px 16px 0px 0px;
+        }
+    }
+
+
+    & .middle-message {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 8px;
+        font-weight: 300;
+        flex-grow: 1;
+        align-items: center;
+
+        & div {
+            height: 64px;
+            align-items: center;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & h4 {
+                color: black;
+                font-size: 21.33px;
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        & p {
+            color: black;
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        & a {
+            color: var(--highligth);
+
+            &:hover{
+                color: var(--primaryColor);
+            }
+
+            &:visited{
+                color: var(--alterPurple);
+            }
+        }
+
+        & .project-card-btn {
+            width: auto;
+            height: 40px;
+            font-size: 16px;
+            padding: 4px;
+            background-color: var(--primaryColor);
+            text-decoration: none;
+
+            &:hover {
+                background-color: var(--secondaryColor);
+                color: var(--alterWhite);
+                transition: 0.2s ease-in-out;
+            }
+
+            & a {
+                text-decoration: none;
+                margin: 16px;
+                color: var(--highligth);
+
+                &:hover {
+                    color: white;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+}
