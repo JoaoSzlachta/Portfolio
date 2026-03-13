@@ -6,10 +6,13 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">  
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/media.css">
 
     <title>Portfólio</title>
 </head>
@@ -30,43 +33,60 @@
                 <li><a href="#personal-projects">Projetos Pessoais</a></li>
             </ul>
         </nav>
-        <header>SEJA BEM-VINDO</header>
-        <div class="card" id="aboutMe">
-            <div class="aboutMe-content">
-                <h2>Sobre Mim</h2>
-                <p>
-                    Prazer, meu nome é João Pedro Brustolin Szlachta.
-                    Atualmente estou cursando <u>Ciência da Computação</u> na UniFil (Centro Universitário Filadélfia).
-                    E apesar de aprender sobre todas as áreas da computação (Lógica, Back-end, Front-end, IA, DevOps, Gerenciamento de Projeto, etc) o meu interesse
-                    caiu quase que por completo no <u>Front-end</u>.
-                    Tenho gostado de trabalhar com React e Tailwindcss, buscando sempre trazer a melhor experiência para o usuário
-                    e por isso busco estudar também Design, UX/UI e áreas correlatas.
-                </p>
-                <div class="aboutMe-links">
-                    <div class="icon-container">
-                        <a href="https://github.com/JoaoSzlachta" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-github" style="color: #fff;"></i>
-                            <span>GitHub</span>
-                        </a>
+        <!-- <header>SEJA BEM-VINDO</header> -->
+        <section class="card" id="aboutMe">
+            <div class="aboutMe-holder">
+                <div class="aboutMe-img"><img src="assets/myphoto.jpg" alt="photo of Joao Szlachta"></div>
+                <div class="aboutMe-content">
+                    <div class="section-header">
+                        <h2>Sobre Mim</h2>
+                        <div class="links">
+                            <div class="icon-container">
+                                <a href="https://github.com/JoaoSzlachta" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github" style="color: black;"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                            <div class="icon-container">
+                                <a href="https://www.linkedin.com/in/joão-pedro-brustolin-szlachta-b076b419b/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-linkedin" style="color: #0e76a8;"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="icon-container">
-                        <a href="https://www.linkedin.com/in/joão-pedro-brustolin-szlachta-b076b419b/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-linkedin" style="color: #0e76a8;"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
+                    <p>
+                        Prazer, meu nome é <u><b>João Pedro B. Szlachta</b></u>.
+                    </p>
+                    <p>
+                        Sou formado em <u>Ciência da Computação</u> pela UniFil (Centro Universitário Filadélfia) e tenho uma especialização em <u>Docência no Ensino Superior</u> pela UniFil também.
+                    </p>
+                    <p>
+                        Apesar de aprender sobre todas as áreas da computação (Lógica de Programação, Back-end, Front-end, IA, DevOps, Gerenciamento de Projeto, etc.) o meu interesse
+                        caiu quase que por completo no <u>Front-end</u>.
+                        Já usei diferentes tecnologias e ferramentas, buscando sempre trazer a melhor experiência para o usuário
+                        e por isso busco estudar também Design, UX/UI e áreas correlatas.
+                    </p>
+                    <p>
+                        Desenvolvi um gosto por Creative Coding, principalmente, por ser uma área que podemos usar códigos de forma não-utilitarista, e fazer arte com lógica e matemática.
+                    </p>
                     
                 </div>
             </div>
-            <div class="aboutMe-img"><img src="assets/myphoto.jpg" alt="photo of Joao Szlachta"></div>
-        </div>
-        <div class="card" id="technologies">
+        </section>
+
+        <section class="card" id="technologies">
             <h2>Tecnologias mais usadas</h2>
-            <p>Desde o início dos meus estudos na área da tecnologia tive a oportunidade de trabalhar com várias tecnologias, plataformas e recursos. Dentre as que mais utilizei estão:
-                HTML, CSS, JavaScript. E recentemente tenho trabalhado bastante com Laravel e estudado mais afundo o React. E o Figma não podia faltar por conta de todos os protótipos e
-                modelos feitos nele.
+            <p>
+                Desde o início dos meus estudos na área da tecnologia tive a oportunidade de trabalhar com várias tecnologias, plataformas e recursos. Dentre as que mais utilizei estão:
+                HTML, CSS, JavaScript. Por conta do trabalho, tenho usado a plataforma de Low-Code Mendix.
+                E para explorar o <i>creative coding</i> estudo o P5.js.
             </p> 
             <div class="icons">
+                <div class="icon-container">
+                    <img src="assets/logos/mendix-logo.png" alt="Mendix logo">
+                    <span>Mendix</span>
+                </div>
                 <div class="icon-container">
                     <i class="fa-brands fa-html5" style="color: #e44d26;"></i>
                     <span>HTML</span>
@@ -80,34 +100,77 @@
                     <span>JavaScript</span>
                 </div>
                 <div class="icon-container">
-                    <i class="fa-brands fa-laravel" style="color: #ff0000;"></i>
-                    <span>Laravel</span>
+                    <img src="assets/logos/p5-log.png" alt="P5.js logo">
+                    <span>P5.js</span>
+                </div>
+            </div>
+            <h2>Outras tecnologias</h2>
+            <p>Recursos, linguagens ou programas que já usei e tenho uma certa noção.
+            </p> 
+            <div class="icons">
+                <div class="icon-container">
+                    <img src="assets/logos/java-logo.png" alt="Java logo">
+                    <span>Java</span>
+                </div>
+                <div class="icon-container">
+                    <img src="assets/logos/python-logo.png" alt="Python logo">
+                    <span>Python</span>
+                </div>
+                <div class="icon-container">
+                    <img src="assets/logos/outsystems-logo.png" alt="Outsystems logo">
+                    <span>Outsystems</span>
                 </div>
                 <div class="icon-container">
                     <i class="fa-brands fa-react" style="color: #61dafb;"></i>
                     <span>React</span>
                 </div>
                 <div class="icon-container">
-                    <img src="assets/figma.png" alt="Figma logo">
+                    <img src="assets/logos/tailwindcss-logo.png" alt="Tailwindcss logo">
+                    <span>Tailwindcss</span>
+                </div>
+                <div class="icon-container">
+                    <img src="assets/logos/figma.png" alt="Figma logo">
                     <span>Figma</span>
                 </div>
             </div>
-        </div>
-        <div class="card" id="personal-projects">
-            <h2>Projetos Pessoais</h2>
-            <p>Segue abaixo alguns projetos meus feitos durante meus estudos. Dentre eles estão alguns projetos feitos através de curso e alguns que apenas sairam da minha cabeça.</p>
-            <p>Link para o meu github pessoal: <a href="https://github.com/JoaoSzlachta" target="_blank" rel="noopener noreferrer">GitHub</a></p>            
+        </section>
+        <section class="card" id="personal-projects">
+            <div class="section-header">
+                <h2>Projetos Pessoais</h2>
+                <div class="links">
+                    <div class="icon-container">
+                        <a href="https://github.com/JoaoSzlachta" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github" style="color: black;"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
             
-            <!--Add cards using JS-->
-        </div>
+            <p>Segue abaixo alguns projetos meus feitos durante meus estudos. Dentre eles estão alguns projetos feitos através de curso e alguns que apenas sairam da minha cabeça.</p>    
+            
+            <div class="project-holder">
+                <!--Add cards using JS-->
+            </div>
+            
+        </section>
 
-        <div class="card" id="academic-projects">
-            <h2>Projetos Acadêmicos</h2>
+        <section class="card" id="academic-projects">
+            <div class="section-header">
+                <h2>Projetos Acadêmicos</h2>
+                <div class="links">
+                    <div class="icon-container">
+                        <a href="https://github.com/JoaoBSzlachta" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github" style="color: black;"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <p>Segue abaixo alguns projetos realizados durante o curso de graduação na UniFil.</p>
-            <p>Link para o meu github do curso: <a href="https://github.com/JoaoBSzlachta" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 
             <!--Add cards using JS-->
-        </div>
+        </section>
 
         <footer>
             <p>&copy; <span id="current-year"></span> João Pedro Brustolin Szlachta. Todos os direitos reservados.</p>

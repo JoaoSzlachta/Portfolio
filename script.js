@@ -111,7 +111,7 @@ const fetchAcademicProjectsAndBuild = () => {
 }
 
 const fetchPersonalProjectsAndBuild = () => {
-    const personalProject = document.querySelector('#personal-projects')
+    const projectHolder = document.querySelector('.project-holder')
 
     fetch("./assets/personal_projects.json")
     .then((response) => response.json())
@@ -148,7 +148,7 @@ const fetchPersonalProjectsAndBuild = () => {
             });
 
             sectionDiv.appendChild(projectCardsDiv);
-            personalProject.appendChild(sectionDiv);
+            projectHolder.appendChild(sectionDiv);
 
         })
         
